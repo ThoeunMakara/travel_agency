@@ -11,7 +11,7 @@
                 {{ (request()->is('travelguides')) ? 'active' : '' }}
                 {{ (request()->is('testimonial')) ? 'active' : '' }}
             " data-bs-toggle="dropdown">Pages</a>
-            <div class="dropdown-menu m-0">
+            <div class="dropdown-menu m-0">ascasva
                 <a href="{{route('front.destination')}}" class="dropdown-item {{ (request()->is('destination')) ? 'active' : '' }}">Destination</a>
                 <a href="{{route('front.booking')}}" class="dropdown-item {{ (request()->is('booking')) ? 'active' : '' }}">Booking</a>
                 <a href="{{route('front.guides')}}" class="dropdown-item {{ (request()->is('travelguides')) ? 'active' : '' }}">Travel Guides</a>
