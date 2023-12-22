@@ -72,7 +72,6 @@
     </div>
 </div> --}}
 
-
 <div class="login-box">
 
     <div class="card card-outline card-primary">
@@ -144,6 +143,7 @@
       <!-- /.card-body -->
     </div>
 
-  </div>
+</div>
+{{-- @include('auth.login_custom') --}}
 
 @endsection

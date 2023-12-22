@@ -20,3 +20,9 @@ Route::get('/booking',[FrontPageController::class,'booking'])->name('front.booki
 Route::get('/travelguides',[FrontPageController::class,'travelguides'])->name('front.guides');
 Route::get('/testimonial',[FrontPageController::class,'testimonial'])->name('front.testimonials');
 Route::get('/contact',[FrontPageController::class,'contact'])->name('front.contact');
+
+
+Route::get('/admin-test', function () {
+    // return view('layouts.master_app');
+    return view('admin.services.index');
+});

@@ -79,7 +79,6 @@
     </div>
 </div> --}}
 
-
 <div class="register-box">
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
@@ -160,5 +159,6 @@
     </div><!-- /.card -->
   </div>
 
+  {{-- @include('auth.register_custom') --}}
 
 @endsection
