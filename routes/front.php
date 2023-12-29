@@ -7,9 +7,9 @@ Route::get('/front', function () {
     return view('frontend');
 });
 
-Route::get('home', function () {
-    return view('front_home');
-});
+// Route::get('home', function () {
+//     return view('front_home');
+// });
 
 Route::get('/',[FrontPageController::class,'index'])->name('front.home');
 Route::get('/about',[FrontPageController::class,'about'])->name('front.about');

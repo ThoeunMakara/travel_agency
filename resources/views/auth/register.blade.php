@@ -89,6 +89,17 @@
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
+
+            @error('name')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Full name"
                 name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -109,7 +120,7 @@
           </div>
           <div class="input-group mb-3">
             <input type="password" class="form-control" placeholder="Password"
-                name="password" required autocomplete="new-password">
+                name="password" required autocomplete="password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>

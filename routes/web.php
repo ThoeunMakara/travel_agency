@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\Admin\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +43,7 @@ Route::get("/user/{id}",function($id){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('admin/services',[ServiceController::class,'index'])->name('admin.services');
 
 

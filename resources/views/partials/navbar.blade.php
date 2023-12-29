@@ -40,5 +40,5 @@
         </div>
 
     </div>
-    <a href="" class="btn btn-primary rounded-pill py-2 px-4">{{ trans('menu.register') }}</a>
+    <a href="{{route("register")}}" class="btn btn-primary rounded-pill py-2 px-4">{{ trans('menu.register') }}</a>
 </div>

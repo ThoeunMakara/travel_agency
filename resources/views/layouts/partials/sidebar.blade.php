@@ -8,14 +8,14 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="{{ asset('assets') }}/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
         </div>
-      </div>
+      </div> --}}
 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
@@ -41,14 +41,58 @@
                 Dashboard
               </p>
             </a>
-
           </li>
+
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="{{ route('admin.services') }}" class="nav-link">
+              <i class="nav-icon fa fa-shopping-cart"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Manage Sevices
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-book"></i>
+              <p>
+                Manage Package
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-globe"></i>
+              <p>
+                Manage Destinations
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Manage Booking
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Manage Guides
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Manage Testimonals
               </p>
             </a>
           </li>
@@ -57,7 +101,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Pages
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>

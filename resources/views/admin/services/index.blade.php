@@ -4,9 +4,9 @@ List Of Services
 @endsection
 @push('styles')
     <!-- DataTables -->
-    <link rel="stylesheet" href="{{ asset('admin') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('admin') }}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('admin') }}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 @endpush
 
 @push('page_header')
@@ -38,13 +38,13 @@ List Of Services
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
-                </tr>
+                    <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>Options</th>
+                    </tr>
                 </thead>
                 <tbody>
                 <tr>
@@ -54,16 +54,21 @@ List Of Services
                   </td>
                   <td>Win 95+</td>
                   <td> 4</td>
-                  <td>X</td>
+                  <td>
+                    <a href="#" class="btn btn-success"><i class="fa fa-eye"></i> View</a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
+                    <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </td>
                 </tr>
-                <tr>
+
+                {{-- <tr>
                   <td>Trident</td>
                   <td>Internet
                     Explorer 5.0
                   </td>
                   <td>Win 95+</td>
                   <td>5</td>
-                  <td>C</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -73,31 +78,40 @@ List Of Services
                   <td>Win 95+</td>
                   <td>5.5</td>
                   <td>A</td>
-                </tr>
+                </tr> --}}
 
+                <tfoot>
+                    <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                    </tr>
                 </tfoot>
+
               </table>
             </div>
             <!-- /.card-body -->
-            </div>
+        </div>
     </div>
 
 @endsection
 
 @push('scripts')
     <!-- DataTables  & Plugins -->
-    <script src="{{ asset('admin') }}/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/jszip/jszip.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/pdfmake/pdfmake.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/pdfmake/vfs_fonts.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-    <script src="{{ asset('admin') }}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/jszip/jszip.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
 
     <script>
