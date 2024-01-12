@@ -47,3 +47,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/services',[ServiceController::class,'index'])->name('admin.services');
 
 
+
+Route::get('admin/services',[ServiceController::class,'index'])->name('admin.services');
+Route::get('admin/services/create',[ServiceController::class,'create'])->name('admin.services.create');
+Route::post('admin/services/store',[ServiceController::class,'store'])->name('admin.services.store');
+Route::get('admin/services/edit/{id}',[ServiceController::class,'edit'])->name('admin.services.edit');
+Route::get('admin/services/show/{id}',[ServiceController::class,'show'])->name('admin.services.show');
+Route::post('admin/services/update/{id}',[ServiceController::class,'update'])->name('admin.services.update');
+Route::post('admin/services/destroy/{id}',[ServiceController::class,'destroy'])->name('admin.services.destroy');
+
+
